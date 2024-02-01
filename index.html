@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div id="questions-container"><div id="containers"></div></div>
+    <!-- #Added buttons div for btns -->
+<div class="buttons">
+    <button id='submit-btn'onclick="submitAnswers()">Submit</button>
+    <button id="showResultsBtn" onclick="showResults()">Show Results</button>
+    <button id="showCorrectBtn" onclick="showCorrectAnswers()">Show Correct Answers</button></div>
+   
+    <div id="marks-container"></div>
+    <div id="correct-container"></div>
+
+    <!-- Popup for Thank You message -->
+    <div class="overlay" id="overlay" onclick=closePopup()></div>
+    <div class="popup" id="popup">
+        <span class="close-btn" onclick=closePopup()>X</span>
+        <h2>Thank You for Submitting!</h2>
+        <p>Your score will be displayed in the Show Results section.</p>
+    </div>
+    <!-- #Pie chart to show the results -->
+    <div class="pie-chart">
+        <canvas id="myChart" height="200px" width="200px" ></canvas>
+    </div>
+<script src="script2.js"></script>
+</body>
+
+</html>

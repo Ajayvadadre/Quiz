@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;600&family=Antonio:wght@300&family=Chakra+Petch&family=Edu+TAS+Beginner:wght@400;500&family=Montserrat:wght@600&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    margin: 20px;
+    background-color: #f1ebf9;
+}
+
+#questions-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.question-container {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding:  2px;
+    background-color: #fefeff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* #Added this buttons div  */
+.buttons{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+#showResultsBtn, #showCorrectBtn {
+    display: none;
+    background-color: #3498db;
+}
+
+#marks-container, #correct-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.marks, .correct-answers {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#results-table, #correct-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#results-table th, #results-table td, #correct-table th, #correct-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#results-table th, #correct-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+#optionElement{
+    border: 2px solid red;
+}
+.question-container .optionContainer{
+    border: 2px solid red;
+}
+.pie-chart{
+    display: none;
+    height: 500px;
+    width: 500px;
+    margin-left: 500px;
+}
