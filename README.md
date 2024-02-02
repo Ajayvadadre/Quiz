@@ -1,4 +1,7 @@
-# Quiz
+# Quiz:
+- Shows the results in a pie chart
+- Shows the correct/incorrect answers
+
 ## Changes made:
 - Changes made to html
 - Changes made to css
